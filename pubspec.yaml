@@ -1,0 +1,29 @@
+name: timezone_viewer  # The name of the project
+description: "A new Timezone viewer."  # A brief description of the project
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev (removes publication settings)
+
+version: 1.0.0+1  # The version number and build number of the app
+
+environment:
+  sdk: ^3.6.1  # Specifies the Dart SDK version required to run the project
+
+dependencies:
+  flutter:
+    sdk: flutter  # The Flutter SDK is required to build Flutter apps
+  cupertino_icons: ^1.0.8  # Provides iOS-style icons for the app's UI
+  intl: ^0.18.0  # Add this line to include the intl package for date and time formatting
+  timezone: ^0.8.0 # Add this line to include the timezone package for time zone conversion
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Flutter's testing framework for unit tests and widget tests
+  flutter_lints: ^5.0.0  # Linting package for Flutter projects to enforce best practices and code consistency
+  flutter_launcher_icons: ^0.9.2  # Correct place for this dependency: package for generating app icons
+
+flutter_icons:
+  android: true  # Set to true to generate launcher icons for Android
+  ios: true  # Set to true to generate launcher icons for iOS
+  image_path: "assets/images/timezone.png"  # Correct path to the clock icon image for the launcher
+
+flutter:
+  uses-material-design: true  # Ensures the app uses Material Design widgets
